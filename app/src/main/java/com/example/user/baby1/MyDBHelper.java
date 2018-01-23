@@ -18,6 +18,7 @@ public class MyDBHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
             sqLiteDatabase.execSQL("CREATE TABLE `personal_data` ( `_personalid` INTEGER, `name` TEXT, `gender` INTEGER, `birthday` TEXT, PRIMARY KEY(`_personalid`) )");
+            sqLiteDatabase.execSQL("CREATE TABLE `feed_data` ( `_feednum` INTEGER, `recordtime` TEXT, `mothermilk` INTEGER, `formula` INTEGER, `weaning` INTEGER , PRIMARY KEY(`_feednum`) )");
     }
 
     @Override
